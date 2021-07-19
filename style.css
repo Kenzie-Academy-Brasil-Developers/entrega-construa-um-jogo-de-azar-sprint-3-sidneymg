@@ -1,0 +1,78 @@
+:root {
+  --text-color: #fcfcfc;
+  --border-color: #0a6ecc;
+}
+
+
+#bodyStyle {
+  background-color: #080808;
+  color: var(--text-color);
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0 25px;
+}
+
+#bodyStyle h1 {
+  font-size: 50px;
+  font-weight: 700;
+  text-align: center;
+  font-family: Arial, Helvetica, sans-serif;
+  margin-top: 20px;
+}
+
+#bodyStyle h2 {
+  font-size: 35px;
+  margin-top: 40px;
+  text-align: center;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+#bodyStyle p {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.choiceDiv {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 20px;
+}
+
+.options {
+  padding: 10px;
+  margin-top: 15px;
+  border: 5px dashed var(--border-color);
+  border-radius: 4px;
+  width: 150px;
+  text-align: center;
+  font-size: 25px;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.options::selection {
+  border-color: red;
+
+}
+
+#resultSpace {
+  line-height: 40px;
+  font-size: 30px;
+  text-align: center;
+}
+
+#resultSpace p {
+  font-size: 50px;
+  margin: 20px 0;
+}
+
+
+@media (min-width: 768px) {
+  .choiceDiv {
+      flex-direction: row;
+  }
+  .options {
+      margin: 0 30px;
+  }
+}
